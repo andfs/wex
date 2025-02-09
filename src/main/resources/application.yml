@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    open-in-view: false
+  application:
+    name: wex-challenge
+  datasource:
+    url: jdbc:h2:mem:wex
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
+        settings:
+          trace: true
+          web-allow-others: true
+
+
+app:
+  uris:
+    treasury: https://api.fiscaldata.treasury.gov/services/api/fiscal_service
+management:
+  wavefront:
+    application:
+      name: wex-challenge
+      service-name: wex-challenge
+    metrics:
+      export:
+        enabled: true
+    api-token-type: wavefront_api_token

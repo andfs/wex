@@ -1,0 +1,5 @@
+### GET request to example server
+https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc,exchange_rate,record_date&filter=country_currency_desc:eq:Brazil-Real,record_date:gte:2020-01-01,record_date:lte:2021-01-01&sort=-record_date&page[size]=1
+
+
+###
